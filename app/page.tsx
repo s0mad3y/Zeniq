@@ -106,9 +106,9 @@ const pricing = [
   },
 ];
 
+const [selectedPlan, setSelectedPlan] = React.useState<string | null>(null);
 const [paymentMethod, setPaymentMethod] = React.useState<string>("");
 const [email, setEmail] = React.useState<string>("");
-const [paymentMethod, setPaymentMethod] = React.useState("");
 
 return (
   <div className="min-h-screen bg-neutral-950 text-white">
