@@ -109,13 +109,11 @@ export default function ZeniqWebsite() {
       <header className="sticky top-0 z-30 border-b border-white/10 bg-neutral-950/80 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 bg-white text-sm font-bold text-neutral-950 shadow-lg">
-              Z
-            </div>
-            <div>
-              <p className="text-lg font-semibold tracking-[0.18em]">ZENIQ</p>
-              <p className="text-xs text-white/55">Minimal motion capture software</p>
-            </div>
+            <img
+              src="/logo.png"
+              alt="ZENIQ logo"
+              className="h-12 object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]"
+            />
           </div>
 
           <nav className="hidden gap-8 text-sm text-white/70 md:flex">
