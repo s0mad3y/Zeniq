@@ -106,8 +106,8 @@ const pricing = [
   },
 ];
 
-const [selectedPlan, setSelectedPlan] = React.useState(null);
-const [email, setEmail] = React.useState("");
+const [paymentMethod, setPaymentMethod] = React.useState<string>("");
+const [email, setEmail] = React.useState<string>("");
 const [paymentMethod, setPaymentMethod] = React.useState("");
 
 return (
