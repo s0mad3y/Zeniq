@@ -1,6 +1,11 @@
+"use client";
+
 import React from "react";
 
 export default function ZeniqWebsite() {
+  const [selectedPlan, setSelectedPlan] = React.useState<string | null>(null);
+  const [paymentMethod, setPaymentMethod] = React.useState<string>("");
+  const [email, setEmail] = React.useState<string>("");
 const features = [
   {
     title: "Markerless Multi-Camera Capture",
@@ -105,10 +110,6 @@ const pricing = [
     highlight: false,
   },
 ];
-
-const [selectedPlan, setSelectedPlan] = React.useState<string | null>(null);
-const [paymentMethod, setPaymentMethod] = React.useState<string>("");
-const [email, setEmail] = React.useState<string>("");
 
 return (
   <div className="min-h-screen bg-neutral-950 text-white">
