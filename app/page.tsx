@@ -114,6 +114,10 @@ export default function ZeniqWebsite() {
               alt="ZENIQ logo"
               className="h-12 object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]"
             />
+            <div>
+              <p className="text-lg font-semibold tracking-[0.18em]">ZENIQ</p>
+              <p className="text-xs text-white/55">Minimal motion capture software</p>
+            </div>
           </div>
 
           <nav className="hidden gap-8 text-sm text-white/70 md:flex">
