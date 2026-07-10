@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import React from "react";
 
 export default function ZeniqWebsite() {
@@ -132,6 +132,15 @@ return (
           <a href="#workflow" className="transition hover:text-white">How it works</a>
           <a href="#pricing" className="transition hover:text-white">Pricing</a>
           <a href="#support" className="transition hover:text-white">Support</a>
+          <Link href="/blog" className="transition hover:text-white">
+            Blog
+          </Link>
+          <Link
+            href="/blog"
+            className="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-white/10"
+          >
+            Read the Blog
+          </Link>
         </nav>
 
         <a
