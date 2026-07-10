@@ -15,6 +15,14 @@ const posts = [
     date: "July 10, 2026",
     category: "Product Update",
   },
+  {
+    slug: "zeniq-development-update",
+    title: "Quy trình làm việc \"Mocap Mù\" – rào cản lớn nhất bóp nghẹt dòng chảy sáng tạo của nghệ sĩ 3D độc lập.",
+    description:
+      "Sự ức chế của các 3D Animator khi làm việc theo quy trình hạn chế kinh phí phần cứng và phần mềm mocap truyền thống.",
+    date: "13:00, July 10, 2026",
+    category: "Tutorial",
+  },
 ];
 
 export default function BlogPage() {
