@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -173,6 +174,9 @@ return (
               >
                 See Pricing
               </a>
+              <Link href="/blog" className="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-white/10">
+                Read the Blog
+              </Link>
               <a
                 href="#features"
                 className="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-white/10"
@@ -504,10 +508,27 @@ return (
                 {paymentMethod ? (
                   <>
                     <div className="mt-4 flex h-56 items-center justify-center rounded-[1.5rem] border border-dashed border-white/15 bg-white/5">
-                      <div className="flex h-40 w-40 items-center justify-center rounded-2xl border border-white/10 bg-white text-center text-sm font-semibold text-neutral-950">
-                        {paymentMethod}<br />QR CODE
-                      </div>
+                      <Image
+                        src={
+                          paymentMethod === "Momo"
+                            ? "/qr/momo-v3.jpg"
+                            : "/qr/bank-v3.jpg"
+                        }
+                        alt={`${paymentMethod} QR Code`}
+                        width={220}
+                        height={220}
+                        className="rounded-xl bg-white p-2"
+                      />
                     </div>
+                      <div className="mt-4 rounded-xl border border-white/10 bg-white/5 p-4 text-left text-sm text-white/70">
+                        <p><strong>Account Name:</strong> THAI THANH NHAN</p>
+                        <p><strong>Bank:</strong> BIDV</p>
+                        <p><strong>Account Number:</strong> 5401138788</p>
+                        <p className="mt-2">
+                          <strong>Transfer Note:</strong><br />
+                          {email || "your@email.com"} - {selectedPlan}
+                        </p>
+                      </div>
                     <p className="mt-4 text-sm text-white/65">
                       Scan this QR code with {paymentMethod} after entering your email address. Your activation code will be sent to the provided email.
                     </p>
