@@ -565,10 +565,10 @@ return (
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <a
-              href="https://github.com/s0mad3y/Zeniq/releases/download/v1.0.0/Zeniq_EXE.zip"
+              href="https://github.com/s0mad3y/Zeniq/releases/latest/download/ZENIQ-Windows.zip"
               className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-neutral-950 transition hover:scale-[1.02]"
             >
-              Download Trial
+              Download ZENIQ
             </a>
             <a
               href="#support"
