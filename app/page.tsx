@@ -128,19 +128,36 @@ return (
           </div>
         </div>
 
-        <nav className="hidden gap-8 text-sm text-white/70 md:flex">
-          <a href="#features" className="transition hover:text-white">Features</a>
-          <a href="#workflow" className="transition hover:text-white">How it works</a>
-          <a href="#pricing" className="transition hover:text-white">Pricing</a>
-          <a href="#support" className="transition hover:text-white">Support</a>
+        <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">
+          <a href="#features" className="transition hover:text-white">
+            Features
+          </a>
+
+          <a href="#workflow" className="transition hover:text-white">
+            How it works
+          </a>
+
+          <a href="#pricing" className="transition hover:text-white">
+            Pricing
+          </a>
+
+          <a href="#support" className="transition hover:text-white">
+            Support
+          </a>
+
           <Link href="/blog" className="transition hover:text-white">
             Blog
           </Link>
+
+          <Link href="/login" className="transition hover:text-white">
+            Sign in
+          </Link>
+
           <Link
-            href="/blog"
-            className="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-white/10"
+            href="/register"
+            className="rounded-xl border border-white/10 px-4 py-2 transition hover:bg-white/10"
           >
-            Read the Blog
+            Register
           </Link>
         </nav>
 
@@ -184,6 +201,7 @@ return (
                 Explore Features
               </a>
             </div>
+            
 
             <div className="mt-10 grid max-w-2xl grid-cols-2 gap-4 md:grid-cols-4">
               {[
