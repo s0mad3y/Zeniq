@@ -23,6 +23,14 @@ const posts = [
     date: "13:00, July 10, 2026",
     category: "Tutorial",
   },
+  {
+    slug: "Challenge",
+    title: "AI Motion Capture Chỉ Với 1 Webcam – ZENIQ Chinh Phục Vũ Đạo Go Down Deh Theo Thời Gian Thực",
+    description:
+      "Chỉ với một chiếc webcam laptop thông thường, liệu AI có thể theo dõi chính xác một trong những điệu nhảy khó nhất hiện nay? Hãy cùng ZENIQ kiểm chứng!",
+    date: "13:00, July 17, 2026",
+    category: "Tutorial",
+  },
 ];
 
 export default function BlogPage() {
