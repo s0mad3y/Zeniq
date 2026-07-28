@@ -133,6 +133,10 @@ return (
             Features
           </a>
 
+          <a href="#demo" className="transition hover:text-white">
+            Demo
+          </a>
+
           <a href="#workflow" className="transition hover:text-white">
             How it works
           </a>
@@ -279,6 +283,41 @@ return (
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section
+        id="demo"
+        className="mx-auto max-w-7xl px-6 py-20 lg:px-8"
+      >
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-sm uppercase tracking-[0.25em] text-white/45">
+            Product demo
+          </p>
+
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
+            See ZENIQ motion capture in action.
+          </h2>
+
+          <p className="mt-4 text-lg text-white/65">
+            Watch how ZENIQ captures performer movement using regular webcams
+            and transforms it into usable motion data.
+          </p>
+        </div>
+
+        <div className="mt-10 overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-3 shadow-2xl">
+          <video
+            className="aspect-video w-full rounded-[1.5rem] bg-black"
+            controls
+            preload="metadata"
+            playsInline
+          >
+            <source
+              src="/demo/zeniq-demo.mp4"
+              type="video/mp4"
+            />
+
+            Your browser does not support HTML video.
+          </video>
         </div>
       </section>
 
@@ -588,11 +627,17 @@ return (
       <section id="download" className="mx-auto max-w-5xl px-6 py-24 lg:px-8">
         <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-10 text-center shadow-2xl">
           <p className="text-sm uppercase tracking-[0.25em] text-white/45">Get started</p>
+            <a
+              href="#demo"
+              className="rounded-full border border-white/20 px-6 py-3 transition hover:bg-white/10"
+            >
+              ▶ Watch Demo
+            </a>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
             Launch markerless mocap from the webcams you already own.
           </h2>
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-white/65">
-            Download the app, install the required environment, run ZENIQ.bat, connect your cameras, and start capturing. Clean interface, powerful features, and a pricing model built to bring more creators into mocap.
+            Download the app, install the required environment, run ZENIQ, connect your cameras, and start capturing. Clean interface, powerful features, and a pricing model built to bring more creators into mocap.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <a
