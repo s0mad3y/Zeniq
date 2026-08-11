@@ -166,7 +166,7 @@ return (
         </nav>
 
         <a
-          href="#download"
+          href="/api/download"
           className="rounded-2xl border border-white/10 bg-white px-4 py-2 text-sm font-medium text-neutral-950 transition hover:scale-[1.02]"
         >
           Download ZENIQ
@@ -460,7 +460,7 @@ return (
 
               {tier.name === "Trial" ? (
                 <a
-                  href="#download"
+                  href="/api/download"
                   className={`mt-8 inline-block rounded-2xl px-5 py-3 text-sm font-semibold transition ${
                     tier.highlight
                       ? 'bg-neutral-950 text-white hover:opacity-90'
@@ -641,7 +641,7 @@ return (
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <a
-              href="https://github.com/s0mad3y/Zeniq/releases/latest/download/ZENIQ-Windows.zip"
+              href="/api/download"
               className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-neutral-950 transition hover:scale-[1.02]"
             >
               Download ZENIQ
